@@ -14,7 +14,7 @@ Text string to base58 string
 int main() {
   std::string text = "hello world";
   int len = text.length();
-  unsigned char encoded[(len) * 137 / 100];
+  unsigned char encoded[len * 137 / 100];
   base58encode(text, len, encoded);
   printf("%s", encoded); // "StV1DL6CwTryKyV"
 
